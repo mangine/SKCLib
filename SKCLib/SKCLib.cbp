@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SKCLib" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SKCLib" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add option="-pthread" />
+					<Add directory="/usr/include/" />
+					<Add directory="/home/manini/casablanca/Release/include/" />
+				</Compiler>
+				<Linker>
+					<Add option="-lcpprest" />
+					<Add option="-pthread" />
+					<Add option="-lboost_system" />
+					<Add option="-lboost_filesystem" />
+					<Add option="-lboost_thread" />
+					<Add directory="/usr/lib/" />
+					<Add directory="/home/manini/casablanca/Release/build.release/Binaries/" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SKCLib" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="CyberPhysicalDescriptor.h" />
+		<Unit filename="EdisonHelper.h" />
+		<Unit filename="IRestRequest.h" />
+		<Unit filename="InlineHelper.h" />
+		<Unit filename="OrionConvenienceQueryRequest.h" />
+		<Unit filename="OrionQueryContextRequest.h" />
+		<Unit filename="OrionRestRequest.cpp" />
+		<Unit filename="OrionRestRequest.h" />
+		<Unit filename="OrionSubscribeContextRequest.h" />
+		<Unit filename="OrionUnsubscribeContextRequest.h" />
+		<Unit filename="OrionUpdateContextRequest.h" />
+		<Unit filename="OrionUpdateContextSubscriptionRequest.h" />
+		<Unit filename="RESTClient.cpp" />
+		<Unit filename="RESTClient.h" />
+		<Unit filename="RESTQueue.h" />
+		<Unit filename="SKCLib.cpp" />
+		<Unit filename="SensorBehavior.h" />
+		<Unit filename="SensorManager.cpp" />
+		<Unit filename="SensorManager.h" />
+		<Unit filename="TestBehavior.h" />
+		<Unit filename="Vectors.h" />
+		<Unit filename="ZigBeehavior.h" />
+		<Unit filename="skc.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
